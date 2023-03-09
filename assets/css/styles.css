@@ -1,0 +1,23 @@
+.upper-left {
+    gap: 10px;
+}
+
+.upper-right {
+    gap: 25px;
+}
+
+nav {
+    gap: 25px;
+}
+
+.navbar-nav {
+    gap: 7px;
+}
+
+.nav-item {
+    border-left: 1px solid #2b29292a;
+}
+
+.nav-link::first-letter {
+    text-decoration: underline;
+}

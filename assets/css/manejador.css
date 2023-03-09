@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+  }
+  html {
+    margin: 0;
+    background: #f8f9f9 linear-gradient(0deg, #f8f9f9 0%, #f8f9f9 83%, #4b82c5 83%, #4b82c5 100%) no-repeat;
+    padding: 30px;
+    height: 100%;
+  }
+  h1, h2, h3, h4, h5 {
+    color: #4a5361;
+    margin: 0;
+    padding: 0;
+  }
+  .file-manager {
+    background: #fff;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .file-manager form {
+    display: flex;
+    flex-flow: column;
+    padding: 0 15px;
+  }
+  .file-manager form label {
+    padding: 10px 0;
+  }
+  .file-manager form input, .file-manager form select {
+    border: 1px solid #c4c7cf;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .file-manager form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #4a79b4;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .file-manager form button:hover {
+    background-color: #4672a9;
+  }
+  .file-manager-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .file-manager-header h1 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #7f828a;
+    flex: 1;
+  }
+  .file-manager-header a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+    background-color: #397ed3;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    margin-right: 15px;
+  }
+  .file-manager-header a:hover {
+    background-color: #2e76cf;
+  }
+  .file-manager-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .file-manager-table thead tr td {
+    position: relative;
+    border-top: 1px solid #dbdde0;
+    border-bottom: 1px solid #dbdde0;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #9a9ea7;
+  }
+  .file-manager-table thead tr td.selected-column {
+    border-bottom: 1px solid #a4a9b1;
+    color: #52565c;
+  }
+  .file-manager-table thead tr td.selected-column i {
+    display: inline-block;
+  }
+  .file-manager-table thead tr td i {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+  }
+  .file-manager-table tbody tr {
+    background-color: #f7f9fa;
+    border-bottom: 1px solid #dbdde0;
+  }
+  .file-manager-table tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+  .file-manager-table tbody tr.selected {
+    background-color: #dceeff;
+    border-bottom: 1px solid #b0cae2;
+  }
+  .file-manager-table tbody tr td {
+    padding: 15px;
+    color: #000;
+  }
+  .file-manager-table tbody tr td.name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .file-manager-table tbody tr td.name i {
+    width: 25px;
+    min-width: 25px;
+  }
+  .file-manager-table tbody tr td.name i.fa-folder {
+    color: #FBD200;
+  }
+  .file-manager-table tbody tr td.name i.fa-file {
+    color: #b9bbbe;
+  }
+  .file-manager-table tbody tr td.name a {
+    text-decoration: none;
+    color: #000;
+  }
+  .file-manager-table tbody tr td.name a:hover {
+    text-decoration: underline;
+  }
+  .file-manager-table tbody tr td.date {
+    font-size: 14px;
+    color: #53555a;
+  }
+  .file-manager-table tbody tr td.actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #4a79b4;
+    color: #FFFFFF;
+    padding: 11px 6px;
+    border-radius: 4px;
+    margin-right: 2px;
+  }
+  .file-manager-table tbody tr td.actions .btn:hover {
+    background: #4672a9;
+  }
+  .file-manager-table tbody tr td.actions .btn.green {
+    background: #4ab46d;
+  }
+  .file-manager-table tbody tr td.actions .btn.green:hover {
+    background: #46a966;
+  }
+  .file-manager-table tbody tr td.actions .btn.red {
+    background: #b44a4a;
+  }
+  .file-manager-table tbody tr td.actions .btn.red:hover {
+    background: #a94646;
+  }
+  .file-manager-table tbody tr td.actions .btn:last-child {
+    margin-right: 0;
+  }
